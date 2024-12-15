@@ -1,0 +1,242 @@
+
+body {
+    font-family: "Gill Sans MT";
+    background-color: #ffebc7;
+    color: #4b3832;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  ::selection {
+    color: white;
+    background: #261901;
+  }
+
+  .sticky{
+    position: sticky;
+    top: 0;
+  }
+  :target {
+    scroll-margin-top: 170px; 
+  }
+
+  
+  header {
+    background-color: #261901;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  header h1 {
+    margin-right: 450px;
+    margin-bottom: 0;
+    margin-top: 25px;
+  }
+
+  /* logo transistion*/
+  .zoom-image-container {
+    width: 100px;
+    overflow: hidden;
+  }
+  
+  .zoom-image-container img {
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .zoom-image-container:hover img {
+    transform: scale(1.2);
+  }
+  
+
+/* mise en forme de bare de navigation*/
+  nav {
+    background-color: #8c5b3b;
+    padding: 1px;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav ul > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  nav ul > li > a:hover {
+    background-color: #714931;
+    padding: 5px;
+  }
+  
+  nav ul  {
+    display:flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+  }
+
+h2{
+  border-bottom: black 2px solid;
+  padding-bottom: 1px;
+}
+
+  
+
+  /* css de civ romaine*/
+
+
+  section>div, section>article, section>aside{
+    background-color: #f2cea2;
+    margin: 10px;
+    padding: 20px;
+    
+  }
+section {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section>article,section>div:first-child{
+  width: 60%;
+  
+}
+section>aside,section>div:last-child{
+  width: 30%;
+  
+}
+
+p{
+  font-size: large;
+}
+/*section 1 description + map */
+article{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+article>div:last-child{
+  align-self: center;
+}
+article>div:last-child>img{
+  width: 500px;
+  height: 300px;
+}
+.localisation >aside{
+  height: 70%;
+  border: 2px solid #261901;
+margin-top: 30px;
+}
+iframe[src*="www.google.com/maps"]{
+  width: 100%;
+  height: 100%;
+}
+
+/*---------------------------------*/
+
+/*section principaux vestige */
+
+section.Principaux_vestiges{ 
+  width: 95.7%;
+  display: flex; 
+  flex-direction: column;
+  margin-left: 27px;
+}
+section.Principaux_vestiges>div{
+  margin: 0;
+  width: auto;
+}
+.vestige{
+  display: flex;
+  justify-content: space-between;
+}
+.vestige div{
+
+  width: 30%;
+}
+
+.vestige p{
+width: 60%;
+}
+.vestige div img{
+  border:#261901 solid 2px;
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+/* CSS pour la section d'evenemnt historique */
+
+.evenement_historique>div:last-child iframe{
+  width: 100%;
+  margin-top: 20px;
+  border:#261901 solid 2px;
+}
+/*----------------------------------------------*/
+
+
+
+
+/*mise en forme de footer*/
+footer {
+  background-color: #261901;
+  text-align: center;
+  padding-bottom: 80px;
+}
+footer ul{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  }
+footer p{
+color: white;
+}
+footer>ul>li{
+  color: white;
+  
+}
+.sous_menuF{
+display: none;
+}
+
+footer>ul>li:hover{
+  font-size: 17px;
+}
+li:hover .sous_menuF{
+  display: block;
+  position: absolute;
+  padding-left: 40px;
+  padding-top: 0px;
+}
+  .sous_menuF li{
+    display: block;
+    margin-bottom: 10px;
+}
+  .sous_menuF li a{
+  color: white;
+  text-decoration: none;
+  }
+  .sous_menuF li a:hover{
+    text-decoration: underline;
+    font-size: 17px;
+  }
+/*-------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
